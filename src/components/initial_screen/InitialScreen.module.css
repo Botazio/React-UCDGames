@@ -1,0 +1,12 @@
+.content {
+   height: 90vh;
+   margin: 0;
+   padding: 0;
+}
+
+.content > canvas {
+   height: 90vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+ }
