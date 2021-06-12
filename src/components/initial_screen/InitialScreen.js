@@ -1,18 +1,20 @@
+import { NavLink } from 'react-router-dom';
+import Animation from './Animation';
 import InitialScreenCSS from './InitialScreen.module.css';
-import { Canvas } from '@react-three/fiber';
 
 const InitialScreen = () => {
    return (
-      <div className={InitialScreenCSS.content}>
-         <Canvas>
-            <mesh>
-               <boxBufferGeometry
-                  attach="geometry"
-                  args={[1, 1, 1]}
-               />
-               <meshBasicMaterial attach="material" color="rgb(0, 270, 270)" />
-            </mesh>
-         </Canvas>
+      <div>
+         <NavLink exact to="/games">
+            <div className={InitialScreenCSS.title}>
+               <h1>PLAY NOW!</h1>
+               <h1>PLAY NOW!</h1>
+               <h1>PLAY NOW!</h1>
+            </div>
+         </NavLink>
+         <div className={InitialScreenCSS.canvas_container}>
+            <Animation />
+         </div>
       </div>
    );
 }

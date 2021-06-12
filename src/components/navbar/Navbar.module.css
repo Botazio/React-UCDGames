@@ -1,45 +1,75 @@
 .navbar {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   height: 10vh;
-   margin: 0 auto;
-   background-color: rgba(0, 0, 0, 0.9);
-   color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
- .navbar a {
-   margin-left: 16px;
-   text-decoration: none;
-   color: white;
- }
- .navbar a:hover {
-   color: rgb(0, 230, 230);
- }
- .navbar_logo {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .navbar_logo svg {
-   margin-right: 10px;
- }
- .navbar_links {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   width: 40%;
- }
- .active_link {
-   padding: 7px 15px;
-   background-color: rgb(0, 230, 230);
-   color: black !important;
-   border-radius: 15px;
- }
- .active_link:hover {
-    background-color: rgb(0, 200, 200);
- }
- .options {
-    position: absolute;
-    right: 40px;
-    cursor: pointer;
- }
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  color: rgb(0, 230, 230);
+}
+.navbar_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_logo svg {
+  margin-right: 10px;
+}
+.navbar_links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+.navbar_links > a {
+  padding: 7px 15px;
+}
+.active_link {
+  background-color: rgb(0, 230, 230);
+  color: black !important;
+  border-radius: 15px;
+}
+.active_link:hover {
+  background-color: rgb(0, 200, 200);
+}
+.list {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+.options_bar {
+  position: absolute;
+  height: calc(100vh - 80px);
+  top: 80px;
+  z-index: 10;
+  right: 0;
+  width: 80px;
+  background-color: rgba(0, 200, 200, 0.7);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+.options_bar > svg {
+  margin-top: 25px;
+  cursor: pointer;
+}
+.options_bar_inactive {
+  transform: translateY(-120%);
+}
+.options_bar_active {
+  transform: translateY(0%);
+}
+.options {
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  transform: translateX(50%);
+}
