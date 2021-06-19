@@ -6,7 +6,7 @@ from django.db import models
 # Describes the different game fields
 class Game(models.Model):
     name = models.CharField(max_length=45)
-    short_decription = models.CharField(max_length=240)
+    short_description = models.CharField(max_length=240)
     long_description = models.TextField()
     author = models.CharField(max_length=45)
     category1 = models.CharField(max_length=45)
@@ -16,4 +16,4 @@ class Game(models.Model):
     topgame = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.short_decription
+        return self.short_description
