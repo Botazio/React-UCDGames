@@ -58,7 +58,7 @@
   flex-direction: column;
 }
 .options_bar > svg {
-  margin-top: 25px;
+  margin-top: 40px;
   cursor: pointer;
 }
 .options_bar_inactive {

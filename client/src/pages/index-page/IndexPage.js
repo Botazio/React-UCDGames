@@ -1,5 +1,5 @@
-import Navbar from "../components/navbar/NavBar"
-import InitialScreen from "../components/initial_screen/InitialScreen"
+import Navbar from "../../components/navbar/NavBar";
+import InitialScreen from "./initial_screen/InitialScreen";
 
 const IndexPage = () => {
    return (

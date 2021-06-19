@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import IndexPage from './pages/IndexPage';
-import NotFound from './components/notfound/NotFound';
-import GamesPage from './pages/GamesPage';
+import IndexPage from './pages/index-page/IndexPage';
+import NotFound from './pages/notfound/NotFound';
+import GamesPage from './pages/games-page/GamesPage';
 
 function App() {
   return (
