@@ -48,7 +48,19 @@
 .filter_2 {
   background-color: #E6B8D2;
 }
-
 .filter_1 > option {
   font-size: 1rem;
+}
+
+/* Styles for the game board */
+.gamesboard {
+  color: white;
+}
+
+/* Styles for the game cards */
+.gamecard {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
 }

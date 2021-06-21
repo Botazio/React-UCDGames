@@ -33,12 +33,12 @@
   padding: 7px 15px;
 }
 .active_link {
-  background-color: rgb(0, 230, 230);
+  background-color: rgb(0, 270, 270);
   color: black !important;
   border-radius: 15px;
 }
 .active_link:hover {
-  background-color: rgb(0, 200, 200);
+  background-color: rgb(0, 230, 230);
 }
 .list {
   position: absolute;

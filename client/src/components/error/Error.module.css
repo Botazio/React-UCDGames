@@ -1,0 +1,18 @@
+.text {
+   color: black;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, 0%);
+   margin-top: 35px;
+   z-index: 10;
+   background-color: rgb(0, 270, 270);
+   padding: 20px 30px;
+   border-radius: 20px;
+}
+.text > p {
+   margin: 5px 0px;
+}
+.text > a {
+   color: black;
+   font-weight: bold;
+}
