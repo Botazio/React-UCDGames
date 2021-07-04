@@ -11,25 +11,7 @@
   height: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-}
-.search_bar {
-  font-size: 1rem;
-  height: 50px;
-  width: 300px;
-  background-color: white;
-  padding-left: 10px;
-  outline: none;
-  text-overflow: ellipsis;
-  border-radius: 25px;
-}
-.search_bar:first-letter {
-  text-transform: capitalize;
-}
-#listbox--1 > * {
-  padding: 5px 5px;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
+  justify-content: space-around;
 }
 .filter_1,
 .filter_2 {
@@ -55,12 +37,5 @@
 /* Styles for the game board */
 .gamesboard {
   color: white;
-}
-
-/* Styles for the game cards */
-.gamecard {
-  width: 250px;
-  height: 350px;
-  background-color: white;
-  border-radius: 20px;
+  width: 60%;
 }

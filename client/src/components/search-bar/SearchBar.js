@@ -9,7 +9,7 @@ import {
    ComboboxOption
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
-import GamesSearcherCSS from './GamesSearcher.module.css';
+import SearchBarCSS from './SearchBar.module.css';
 
 export default function SearchBar() {
    const games = false;
@@ -27,7 +27,7 @@ export default function SearchBar() {
             setTerm(address);
          }}>
          <ComboboxInput
-            className={GamesSearcherCSS.search_bar}
+            className={SearchBarCSS.search_bar}
             placeholder="Search..."
             autoComplete="off"
             value={term}

@@ -1,9 +1,9 @@
-import useFetch from '../../../helpers/useFetch';
+import useFetch from '../../helpers/useFetch';
 import GamesSearcherCSS from './GamesSearcher.module.css';
-import SearchBar from './SearchBar';
-import GamesBoard from './GamesBoard';
-import IsPending from '../../../components/ispending/IsPending';
-import Error from '../../../components/error/Error';
+import SearchBar from '../search-bar/SearchBar';
+import GamesBoard from '../games-board/GamesBoard';
+import IsPending from '../ispending/IsPending';
+import Error from '../error/Error';
 
 const GamesSearcher = () => {
    const { data: gamesData, isPending, error } = useFetch("http://localhost:8000/games/all_games/");

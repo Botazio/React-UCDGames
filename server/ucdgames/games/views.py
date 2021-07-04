@@ -27,6 +27,7 @@ def all_games(request):
             'category3': game_details.category3,
             'category4': game_details.category4,
             'topgame': game_details.topgame,
+            'imgURL': game_details.imgURL,
         })
 
     return JsonResponse(response, safe=False)
@@ -48,6 +49,7 @@ def game(request, game_id):
         'category3': game_details.category3,
         'category4': game_details.category4,
         'topgame': game_details.topgame,
+        'imgURL': game_details.imgURL,
     }
 
     return JsonResponse(response)

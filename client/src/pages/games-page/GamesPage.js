@@ -1,4 +1,4 @@
-import GamesSearcher from "./games_searcher/GamesSearcher"
+import GamesSearcher from "../../components/games-searcher/GamesSearcher"
 import Navbar from "../../components/navbar/NavBar"
 
 const GamesPage = () => {

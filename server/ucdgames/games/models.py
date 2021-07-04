@@ -13,6 +13,7 @@ class Game(models.Model):
     category2 = models.CharField(max_length=45)
     category3 = models.CharField(max_length=45, blank=True, null=True)
     category4 = models.CharField(max_length=45, blank=True, null=True)
+    imgURL = models.CharField(max_length=230)
     topgame = models.BooleanField(default=False)
 
     def __str__(self):
